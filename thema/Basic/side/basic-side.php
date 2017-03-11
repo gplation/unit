@@ -49,11 +49,11 @@ $line = 'navy';
 			<?php echo $side_category;?>
 		</div>
 	<?php } ?>
-
+<!-- 
 	<div class="row">
 		<div class="col-md-12 col-sm-6">
 
-			<!-- 새글 시작 -->
+			새글 시작
 			<div class="div-title-underbar">
 				<a href="<?php echo $at_href['new'];?>">
 					<span class="pull-right lightgray <?php echo $font;?>">+</span>
@@ -65,12 +65,12 @@ $line = 'navy';
 			<div class="widget-box">
 				<?php echo apms_widget('basic-post-list', $wid.'-ws1', 'icon={아이콘:pencil} date=1 strong=1,2'); ?>
 			</div>
-			<!-- 새글 끝 -->
+			새글 끝
 
 		</div>
 		<div class="col-md-12 col-sm-6">
 
-			<!-- 댓글 시작 -->
+			댓글 시작
 			<div class="div-title-underbar">
 				<a href="<?php echo $at_href['new'];?>?view=c">
 					<span class="pull-right lightgray <?php echo $font;?>">+</span>
@@ -82,14 +82,42 @@ $line = 'navy';
 			<div class="widget-box">
 				<?php echo apms_widget('basic-post-list', $wid.'-ws2', 'icon={아이콘:comment} comment=1 date=1 strong=1,2'); ?>
 			</div>
-			<!-- 댓글 끝 -->
+			댓글 끝
 		</div>
 	</div>
-
+ -->
 	<!-- 광고 시작 -->
 	<div class="widget-box">
-		<div style="width:100%; min-height:280px; line-height:280px; text-align:center; background:#f5f5f5;">
-			반응형 구글광고 등
+		<div style="width:100%; height:100%; text-align:center; background:#f5f5f5;">
+			<!-- 구글광고 추가 용준 -->
+			<?php if(!G5_IS_MOBILE) { ?>
+				<center>
+					<script type="text/javascript">
+						google_ad_client = "ca-pub-2562502091444002";
+						google_ad_slot = "5858376405";
+						google_ad_width = 250;
+						google_ad_height = 250;
+					</script>
+					<!-- unit.kr 250x250 -->
+
+					<script type="text/javascript"
+						src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+					</script>
+				</center>
+			<?php } else if(G5_IS_MOBILE){ ?>
+				<center>
+					<script type="text/javascript">
+						google_ad_client = "ca-pub-2562502091444002";
+						google_ad_slot = "8451916004";
+						google_ad_width = 320;
+						google_ad_height = 50;
+					</script>
+					<!-- unit.kr 모바일 320x50 -->
+					<script type="text/javascript"
+					src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+					</script>
+				</center>
+			<?php } ?>
 		</div>
 	</div>
 	<!-- 광고 끝 -->
@@ -117,10 +145,10 @@ $line = 'navy';
 	</div>
 	<!-- 통계 끝 -->
 
-	<!-- SNS아이콘 시작 -->
+<!-- 	SNS아이콘 시작
 	<div class="widget-box text-center">
 		<?php echo $sns_share_icon; // SNS 공유아이콘 ?>
 	</div>
-	<!-- SNS아이콘 끝 -->
-
+	SNS아이콘 끝
+	 -->
 </div>

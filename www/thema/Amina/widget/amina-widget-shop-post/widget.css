@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* amina-widget-shop-post */
+.amina-widget-shop-post .widget-head { padding:12px 14px 6px !important; margin:0px; font-weight:bold; border-bottom:1px dotted #aaa; background: #fff; }
+.amina-widget-shop-post .widget-body { padding:14px; margin:0px; background: #fff; }
+.amina-widget-shop-post .widget-more { font-size:11px; font-weight:normal; color:#888; letter-spacing:-1px; margin-top:1px; }
+.amina-widget-shop-post .media { margin:0px 0px 10px; }
+.amina-widget-shop-post .photo img { width:44px; height:44px; border:0px; border-radius:50%; }
+.amina-widget-shop-post a { margin:0; padding:0px; display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; }
+.amina-widget-shop-post a:hover { font-weight:bold; color:crimson; }
+.amina-widget-shop-post .info { margin:0; padding:0px; display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; letter-spacing:-1px; }
+.amina-widget-shop-post .btn-wset { margin-top:10px; }

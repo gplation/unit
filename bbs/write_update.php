@@ -933,6 +933,77 @@ if($board['as_resize_kb'] > 0 && $board['as_resize'] > 0) {
 	}
 }
 
+//개인 푸쉬 알림 테스트
+if($bo_table =='donga' || $bo_table=='jungsan' || $bo_table=='green' || $bo_table == 'u_nion' || $bo_table == 'city' || $bo_table == 'jamsil' ||  $bo_table =='gallary' ||  $bo_table =='meeting' ||  $bo_table == 'account'
+	||  $bo_table == 'unit_notice'){
+	//FCM api URL
+	$url = 'https://fcm.googleapis.com/fcm/send';
+	//api_key available in Firebase Console -> Project Settings -> CLOUD MESSAGING -> Server key
+	$server_key = 'AAAABpwgTqI:APA91bHN7IJduewvn84BBcpVS7v8Dg82x6RgZzkRtyAYeiLDHs7acKdY9FoWp2MKe_O0RM2sCiEKDC2O0cR04xDGKv9iRR9zBQa4pYRvJ7cqThPOdrWTj3HPf5If4-TA-yDTcDbyuGNs';
+
+	$fields = array();
+
+	$fields['data'] = array('TITLE' => $wr_subject, 'BODY' => $wr_name.'님의 글이 올라왔어요', 'URL' => 'http://unit.kr/bbs'.'/board.php?bo_table='.$bo_table.'&wr_id='.$wr_id.$qstr, 'WHERE'=> $bo_table);
+
+	switch($bo_table) {
+		case 'green':
+			$fields['to']='/topics/green';
+			break;
+
+		case 'donga':
+			$fields['to']='/topics/donga';
+			break;
+
+		case 'city':
+			$fields['to']='/topics/city';
+			break;
+
+		case 'u_nion':
+			$fields['to']='/topics/u_nion';
+			break;
+
+		case 'jamsil':
+			$fields['to']='/topics/jamsil';
+			break;
+
+		case 'jungsan':
+			$fields['to']='/topics/jungsan';
+			break;
+		case 'gallary':
+			$fields['to']='/topics/gallery';
+			break;
+		case 'meeting':
+			$fields['to']='/topics/total';
+			break;
+		case 'account':
+			$fields['to']='/topics/total';
+			break;
+		case 'unit_notice':
+			$fields['to']='/topics/notice';
+			break;
+	}
+
+	//header with content_type api key
+	$headers = array(
+		'Authorization:key='.$server_key,
+		'Content-Type:application/json'
+		);
+
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_POST, true);
+	curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($fields));
+	$result = curl_exec($ch);
+	if ($result === FALSE) {
+		die('FCM Send Error: ' . curl_error($ch));
+	} 
+	curl_close($ch);
+}
+
 // 사용자 코드 실행
 @include_once($board_skin_path.'/write_update.skin.php');
 @include_once($board_skin_path.'/write_update.tail.skin.php');

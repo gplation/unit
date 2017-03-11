@@ -6,11 +6,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$skin_url.'/style.css" media="scr
 
 ?>
 <!-- 회원가입 차단 문구 -->
-<div class="alert alert-info" role="alert">
+<!-- <div class="alert alert-info" role="alert">
 	<strong><i class="fa fa-exclamation-circle"></i> 유니트는 매년 학기초(2월말~3월초 / 8월말~9월초)에만 신입모집을 진행중 입니다.<p> ( 문의 : facebook에서 'clubunit' 검색 혹은 hetosi06@naver.com ) </strong>
-</div>
+</div> -->
 
-<!-- 
 <div class="alert alert-info" role="alert">
 	<strong><i class="fa fa-exclamation-circle"></i> 회원가입약관 및 개인정보처리방침안내의 내용에 동의하셔야 회원가입 하실 수 있습니다.</strong>
 </div>
@@ -70,4 +69,3 @@ add_stylesheet('<link rel="stylesheet" href="'.$skin_url.'/style.css" media="scr
         return true;
     }
 </script>
- -->

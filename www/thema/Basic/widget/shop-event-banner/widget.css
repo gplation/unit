@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* widget-shop-event-banner */
+.widget-shop-event-banner { position: relative; }
+.widget-shop-event-banner .carousel-nav a { background: rgb(245, 245, 245); border: 1px solid transparent; border-image: none; top: -50px; width: 30px; height: 30px; text-align: center; right: 0px; color: rgb(55, 55, 55); line-height: 26px; font-size: 18px; margin-top: 0px; position: absolute; opacity: 1; }
+.widget-shop-event-banner .carousel-nav a:hover { background: rgb(55, 55, 55) !important; color: rgb(255, 255, 255); }
+.widget-shop-event-banner .carousel-nav a.left { right: 36px; }
+.widget-shop-event-banner .carousel-nav a.right { right: 0px; }
+.widget-shop-event-banner .carousel-nav a:hover { background: rgb(255, 255, 255); }
+.widget-shop-event-banner .carousel-item { margin: 0px 0px 15px; border: 1px solid rgb(231, 231, 231); transition:0.3s linear; border-image: none; overflow: hidden; position: relative; cursor: default; -webkit-transition: all 0.3s linear; }
+.widget-shop-event-banner .carousel-item::before { display: table; content: ""; }
+.widget-shop-event-banner .carousel-item::after { display: table; content: ""; }
+.widget-shop-event-banner .carousel-item::after { clear: both; }
+.widget-shop-event-banner .img { display:block; position:relative; height:0; overflow:hidden; text-align:center; background:#f5f5f5; }
+.widget-shop-event-banner .img img { display:block; position:absolute; top:0; left:0; margin:0 auto; width:100%; height:auto; border:0px; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.widget-shop-event-banner .img:hover img { -webkit-transform: scale(1.3); -moz-transform: scale(1.3); -o-transform: scale(1.3); -ms-transform: scale(1.3); transform: scale(1.3); }

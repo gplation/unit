@@ -75,14 +75,21 @@ function count_mb_nick($reg_mb_nick)
 
 function exist_mb_nick($reg_mb_nick, $reg_mb_id)
 {
-    global $g5;
+/*    global $g5;
     $row = sql_fetch(" select count(*) as cnt from {$g5['member_table']} where mb_nick = '$reg_mb_nick' and mb_id <> '$reg_mb_id' ");
     if ($row['cnt'])
         return aslang('alert', 'reg_nick_exist'); //이미 존재하는 닉네임입니다.
-    else
+    else*/
         return "";
 }
-
+function same_mb_nick_mb_name($reg_mb_nick, $reg_mb_name)
+{
+	if($reg_mb_nick != $reg_mb_name){
+		return aslang('alert', 'reg_nick_name_same');
+	}else{
+		return "";
+	}
+}
 function reserve_mb_nick($reg_mb_nick)
 {
     global $config;

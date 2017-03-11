@@ -395,6 +395,8 @@ if ($board['as_good'] && isset($wr_good)) {
 	}
 }
 
+// 개인 푸쉬 알림 테스트
+
 // 사용자 코드 실행
 @include_once($board_skin_path.'/write_comment_update.skin.php');
 @include_once($board_skin_path.'/write_comment_update.tail.skin.php');

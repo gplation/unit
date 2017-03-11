@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+body { margin:0; padding:0; }
+
+.memo-send-info { padding:8px 20px;background:#fafafa;border-bottom:1px solid #eee; }
+.memo-content { padding:20px; line-height:22px;border-bottom:1px solid #eee; margin-bottom:15px; }
+.memo-send-form { padding:20px; }

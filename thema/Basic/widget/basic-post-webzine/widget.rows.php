@@ -1,6 +1,6 @@
 <?php
 if (!defined('_GNUBOARD_')) exit; //개별 페이지 접근 불가
-
+global $mb; 
 // 추출하기
 if(!$wset['rows']) {
 	$wset['rows'] = 6;	
@@ -92,6 +92,7 @@ for ($i=0; $i < $list_cnt; $i++) {
 					</div>
 					<div class="post-text post-ko txt-short ellipsis">
 						<?php echo $list[$i]['name'];?>
+						
 						<?php if($is_cate && $list[$i]['ca_name']) { ?>
 							<span class="post-sp">|</span>
 							<?php echo $list[$i]['ca_name'];?>

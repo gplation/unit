@@ -116,7 +116,7 @@ if($header_skin)
 				<div class="form-group">
 					<div class="col-sm-offset-2 col-sm-8 text-muted">
 						<div id="msg_mb_nick"></div>
-						공백없이 한글,영문,숫자만 입력 가능 (한글2자, 영문4자 이상) 닉네임을 바꾸시면 앞으로 <?php echo (int)$config['cf_nick_modify'] ?>일 이내에는 변경 할 수 없습니다.
+						이름과 닉네임은 동일하게 입력해야 합니다.
 					</div>
 				</div>
 			<?php }  ?>

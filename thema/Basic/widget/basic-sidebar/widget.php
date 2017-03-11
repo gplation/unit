@@ -75,7 +75,7 @@ var sidebar_time = "<?php echo $response_check_time;?>";
 		<!-- Common -->
 		<div class="sidebar-common">
 
-			<!-- Login -->
+<!-- 			Login
 			<div class="btn-group btn-group-justified" role="group">
 				<?php if($is_member) { ?>
 					<a href="#" onclick="sidebar_open('sidebar-user'); return false;" class="btn btn-navy btn-sm">내정보</a>
@@ -92,8 +92,8 @@ var sidebar_time = "<?php echo $response_check_time;?>";
 					<a href="<?php echo $at_href['lost'];?>" class="win_password_lost btn btn-navy btn-sm">정보찾기</a>
 				<?php } ?>
 			</div>
-
-			<div class="h15"></div>
+			
+			<div class="h15"></div> -->
 
 		</div>
 

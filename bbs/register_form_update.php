@@ -147,6 +147,7 @@ if ($w == '' || $w == 'u') {
 
     if ($msg = exist_mb_nick($mb_nick, $mb_id))     alert($msg, "", true, true);
     if ($msg = exist_mb_email($mb_email, $mb_id))   alert($msg, "", true, true);
+    if ($msg = same_mb_nick_mb_name($mb_nick, $mb_name))     alert($msg, "", true, true);	
 }
 
 // 사용자 코드 실행

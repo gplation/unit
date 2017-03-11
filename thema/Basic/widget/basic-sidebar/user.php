@@ -93,6 +93,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 				</a>		
 			</li>
 			<?php if(IS_YC) { //영카트 ?>
+<!-- 
 				<li>
 					<?php if ($member['as_coupon']) { ?>
 						<a href="<?php echo $at_href['coupon']; ?>" target="_blank" class="win_point no-fa">
@@ -113,6 +114,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 						위시리스트
 					</a>
 				</li>
+ -->
 			<?php } ?>
 			<li>
 				<a href="<?php echo $at_href['mypage']; ?>">
@@ -194,8 +196,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 </div>
 
 <div class="h20"></div>
-
-<!-- Service -->
+<!-- 
+Service
 <div class="div-title-underline-thin en">
 	<b>SERVICE</b>
 </div>
@@ -211,3 +213,4 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 	<li><a href="<?php echo $at_href['new'];?>">새글모음</a></li>
 	<li><a href="<?php echo $at_href['connect'];?>">현재접속자</a></li>
 </ul>
+ -->

@@ -362,7 +362,10 @@ if ($_SESSION['ss_mb_id']) { // 로그인중이라면
         if (strtolower($tmp_mb_id) != strtolower($config['cf_admin'])) {
             $sql = " select mb_password, mb_intercept_date, mb_leave_date, mb_email_certify from {$g5['member_table']} where mb_id = '{$tmp_mb_id}' ";
             $row = sql_fetch($sql);
-            $key = md5($_SERVER['SERVER_ADDR'] . $_SERVER['REMOTE_ADDR'] . $_SERVER['HTTP_USER_AGENT'] . $row['mb_password']);
+
+			//IP에 관계없는 자동 로그인 처리 cf http://amina.co.kr/bbs/board.php?bo_table=tip&wr_id=441
+			//$key = md5($_SERVER['SERVER_ADDR'] . $_SERVER['REMOTE_ADDR'] . $_SERVER['HTTP_USER_AGENT'] . $row['mb_password']); 
+			$key = md5($_SERVER['SERVER_ADDR'] . $_SERVER['HTTP_USER_AGENT'] . $row['mb_password']); 
             // 쿠키에 저장된 키와 같다면
             $tmp_key = get_cookie('ck_auto');
             if ($tmp_key == $key && $tmp_key) {

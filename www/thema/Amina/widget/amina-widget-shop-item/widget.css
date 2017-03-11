@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* amina-widget-shop-item */
+.amina-widget-shop-item .widget-head { padding:12px 14px 6px !important; margin:0px; font-weight:bold; border-bottom:1px dotted #aaa; background: #fff; }
+.amina-widget-shop-item .widget-body { padding:12px 14px 0px; margin:0px; background: #fff; }
+.amina-widget-shop-item .widget-more { font-size:11px; font-weight:normal; color:#888; letter-spacing:-1px; margin-top:1px; }
+.amina-widget-shop-item .item-box { position:relative; padding:0px; margin-bottom:14px; overflow:hidden; }
+.amina-widget-shop-item .row { margin-left:-7px; margin-right:-7px; }
+.amina-widget-shop-item .col { padding-left:7px; padding-right:7px; }
+.amina-widget-shop-item .label-tack { left: 0px; top: 10px; z-index: 1; position: absolute; }
+.amina-widget-shop-item .label-band { 
+	z-index:2; font-family: tahoma; top: 5px; color: #fff; letter-spacing:1px; width: 100px; padding: 5px; right: -32px; font-size: 11px; position: absolute; text-align: center; 
+	transform: rotate(45deg); -o-transform: rotate(45deg);	-ms-transform: rotate(45deg); -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); 
+}
+.amina-widget-shop-item .label-dc { color:orangered; text-align:right; font-weight:bold; font-style:italic; width:100%; margin:0px; padding:0px 10px; line-height:40px; height:40px; margin-top:-40px; font-size:32px; letter-spacing:-1px; position:relative; z-index:2; text-shadow: 0px 2px 1px rgba(0,0,0,0.7); }
+.amina-widget-shop-item .label-dc-cur { color:orangered; text-align:right; font-weight:bold; font-style:italic; width:100%; margin:0px; padding:0px 10px; line-height:35px; height:75px; margin-top:-75px; font-size:32px; letter-spacing:-1px; position:relative; z-index:2; text-shadow: 0px 2px 1px rgba(0,0,0,0.7); }
+.amina-widget-shop-item .label-dc-cur strike { color:#fff; line-height:20px; height:20px; font-size:20px; }
+.amina-widget-shop-item .label-share { margin:0px; padding:0px 10px; line-height:40px; height:40px; margin-top:-40px; position:relative; z-index:2; }
+.amina-widget-shop-item .img { display:block; position:relative; height:0; overflow:hidden; }
+.amina-widget-shop-item .img img { display:block; position:absolute; top:0; left:0; width:100%; height:auto; border:0px; }
+.amina-widget-shop-item .item-content { position:relative; margin:0px; line-height:22px; border:0px; background:#fff; }
+.amina-widget-shop-item .item-box:hover .item-content { padding:0px; margin:0px; border:0px solid rgb(231,76,60); }
+.amina-widget-shop-item strong { margin:0px; padding:0px; line-height:22px; font-weight: bold; letter-spacing:-1px; display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; }
+.amina-widget-shop-item strong a { color:#333; text-decoration:none; }
+.amina-widget-shop-item strong a:hover { color:crimson; text-decoration:none; }
+.amina-widget-shop-item .text { padding:15px 0px 0px; }
+.amina-widget-shop-item .desc { font-size:12px; color:#888; line-height:20px; padding:0px; display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; }
+.amina-widget-shop-item.mobile .desc { font-size:13px; }
+.amina-widget-shop-item .details { padding:2px 2px 0px; }
+.amina-widget-shop-item .details i { margin-right:2px; }
+.amina-widget-shop-item .details strike { font-size:12px; color:#888; font-weight:normal; }
+.amina-widget-shop-item .details .price i { font-size:12px; }
+.amina-widget-shop-item .btn-wset { padding-bottom:10px; }

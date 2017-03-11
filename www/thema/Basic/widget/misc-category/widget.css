@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+/* widget-misc-category */
+.panel-group.widget-misc-category .panel-heading.new::after { content: "" !important; }
+.widget-misc-category .list-group { border-top:1px solid #ddd !important; }
+.widget-misc-category i.new-icon { margin:0px !important; }

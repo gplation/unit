@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* amina-widget-banner */
+.amina-widget-banner { position: relative; line-height:20px; }
+.amina-widget-banner .widget-head { padding:12px 14px 6px !important; margin:0px; font-weight:bold; border-bottom:1px dotted #aaa; background: #fff; }
+.amina-widget-banner .widget-body { padding:12px 14px 0px; margin:0px; background: #fff; }
+.amina-widget-banner .carousel-nav { float:right; margin-top:-41px; }
+.amina-widget-banner .carousel-nav i { color:#888; margin-left:5px; font-size:18px; }
+.amina-widget-banner .row { margin-left:-7px; margin-right:-7px; }
+.amina-widget-banner .col { padding-left:7px; padding-right:7px; }
+.amina-widget-banner .content { padding:0px 0px 14px; overflow:hidden; }
+.amina-widget-banner .img { display:block; position:relative; height:0; overflow:hidden; text-align:center; background:#f5f5f5; }
+.amina-widget-banner .img img { display:block; position:absolute; top:0; left:0; margin:0 auto; width:100%; height:auto; border:0px; }
+.amina-widget-banner .caption {  display:block; text-align:left; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; background:#000; color:#fff; padding: 6px 10px; transition:transform 0.4s, opacity 0.1s 0.3s; left: 0px; width: 100%; bottom: 0px; position: absolute; opacity: 0; transform: translateY(100%); -o-transition: -o-transform .4s, opacity .1s .3s; -moz-transition: -moz-transform .4s, opacity .1s .3s; -webkit-transition: -webkit-transform .4s, opacity .1s .3s; -webkit-transform: translateY(100%); -moz-transform: translateY(100%); -o-transform: translateY(100%); }
+.amina-widget-banner .img:hover .caption { transition:transform 0.4s, opacity 0.1s; opacity: 0.8; transform: translateY(0px); -o-transition: -o-transform .4s, opacity .1s; -moz-transition: -moz-transform .4s, opacity .1s; -webkit-transition: -webkit-transform .4s, opacity .1s; -webkit-transform: translateY(0); -moz-transform: translateY(0); -o-transform: translateY(0); }
+.amina-widget-banner .caption .cnt { font-size:10px; font-family:verdana; letter-spacing:-1px; font-weight:bold; color: orangered; margin-left:12px; margin-right:4px; }
+.amina-widget-banner .caption .icon { color:#ddd; }
+.amina-widget-banner .caption .rank-icon { display:inline-block; padding:0px 6px; font-size:11px; letter-spacing:-1px; line-height:16px; margin-right:2px; }
+.amina-widget-banner .btn-wset { padding-bottom:10px; }

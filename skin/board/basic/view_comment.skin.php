@@ -86,7 +86,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
 									<span class="text-muted">답변</span>
 								</a>
 							<?php } ?>
-							<?php if ($list[$i]['is_edit']) { ?>
+							<?php if ($list[$i]['is_edit']) { ?>	
 								<a href="<?php echo $c_edit_href;  ?>" onclick="comment_box('<?php echo $comment_id ?>', 'cu'); return false;">
 									<span class="text-muted media-btn">수정</span>
 								</a>

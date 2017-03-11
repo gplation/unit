@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* widget-misc-title-middle */
+.widget-misc-title-middle {	background-size: cover; padding:0px; overflow:hidden; background-repeat: no-repeat !important; background-position: center center; }
+.widget-misc-title-middle.bg-fixed { background-attachment: fixed !important; }
+.widget-misc-title-middle .container { min-height:340px; padding:60px 15px 15px; }
+.widget-misc-title-middle-banner { padding:20px 0px; }
+.widget-misc-title-middle-banner .boxed-contaner-inner { padding-left:20px; padding-right:20px; }
+
+@media all and (max-width:767px) {
+	.widget-misc-title-middle-banner { text-align:center; }
+	.widget-misc-title-middle-banner .ticker { margin-bottom:15px; }
+	.widget-misc-title-middle-banner .pull-right { float:none !important; }
+}

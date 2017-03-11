@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+.faq-img img, .faq-html img, .faq-content img { width:auto; max-width:100%; border:0; }
+
+.list-none { padding:50px 0; }

@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.wrap-group .list-head { padding:12px 15px 8px !important; margin:0px; font-weight:bold; border-bottom:1px dotted #aaa; background: #fff; }
+.wrap-group .list-head .more-view { font-size:11px; font-weight:normal; color:#888; letter-spacing:-1px; }
+.wrap-group .list-body { padding:15px; margin:0px 0px 15px; background: #fff; }
+.wrap-group .list-body ul { padding:0px; margin:0px; line-height:22px; list-style:none; }
+.wrap-group .list-body li { margin:0; padding:0px; }
+.wrap-group .list-body li a { margin:0; padding:0px; display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; }
+.wrap-group .list-body li a:hover { color:crimson; }
+.wrap-group .list-body li .icon { margin-right:2px; }
+.wrap-group .list-body li .cnt { font-size:10px; font-family:verdana; letter-spacing:-1px; font-weight:bold; color: rgb(233, 27, 35); margin-left:12px; margin-right:4px; }

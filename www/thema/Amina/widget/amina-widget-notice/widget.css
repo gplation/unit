@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/* amina-widget-notice */
+.amina-widget-notice { }
+.amina-widget-notice .notice-box { background:#fafafa; border:1px solid #ddd; padding:8px 15px; }
+.amina-widget-notice .carousel a { display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; }
+.amina-widget-notice .rank-icon { display:inline-block; padding:0px 6px; font-size:11px; letter-spacing:-1px; line-height:20px; margin-right:2px; }
+.amina-widget-notice .cnt { font-size:10px; font-family:verdana; letter-spacing:-1px; font-weight:bold; color: rgb(233, 27, 35); margin-left:12px; margin-right:4px; }
+.amina-widget-notice .btn-wset { margin-top:10px; }

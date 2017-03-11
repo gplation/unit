@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* amina-widget-list */
+.amina-widget-list .widget-head { padding:12px 14px 6px !important; margin:0px; font-weight:bold; border-bottom:1px dotted #aaa; background: #fff; }
+.amina-widget-list .widget-body { padding:10px 14px; margin:0px; background: #fff; }
+.amina-widget-list .widget-more { font-size:11px; font-weight:normal; color:#888; letter-spacing:-1px; margin-top:1px; }
+.amina-widget-list ul { padding:0px; margin:0px; line-height:22px; list-style:none; }
+.amina-widget-list li { margin:0; padding:0px; }
+.amina-widget-list li a { margin:0; padding:0px; display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; }
+.amina-widget-list li a:hover { font-weight:bold; color:crimson; }
+.amina-widget-list li .icon { color:#ddd; }
+.amina-widget-list li .rank-icon { display:inline-block; padding:0px 6px; font-size:11px; letter-spacing:-1px; line-height:16px; margin-right:2px; }
+.amina-widget-list li .cnt { font-size:10px; font-family:verdana; letter-spacing:-1px; font-weight:bold; color: rgb(233, 27, 35); margin-left:12px; margin-right:4px; }
+.amina-widget-list li .cnta { font-size:10px; font-family:verdana; letter-spacing:-1px; font-weight:bold; color: rgb(233, 27, 35); margin-left:12px; margin-right:4px; }
+.amina-widget-list .btn-wset { padding-bottom:10px; }

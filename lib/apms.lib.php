@@ -212,8 +212,8 @@ function apms_member($mb_id, $lvl='yes') {
 	} else {
 		$info = ($member['mb_id'] == $mb_id) ? $member : sql_fetch(" select * from {$g5['member_table']} where mb_id = TRIM('$mb_id') ", false);
 		$info['photo'] = apms_photo_url($mb_id);
-		$ml = 'xp_grade'.$info['mb_level'];
-		$info['grade'] = $xp[$ml];
+		//$ml = 'xp_grade'.$info['mb_level'];
+		$info['grade'] = grade_level_icon($info['mb_level']);
         $info['name'] = ($info['mb_open']) ? apms_sideview($mb_id, $info['mb_nick'], $info['mb_email'], $info['mb_homepage'], $info['as_level'], $lvl) : apms_sideview($mb_id, $info['mb_nick'], '', '', $info['as_level'], $lvl);
 
 		$info['like'] = $info['as_like'];
@@ -252,7 +252,10 @@ function apms_member($mb_id, $lvl='yes') {
 
 	return $info;
 }
-
+// Grade level icon
+function grade_level_icon($ml){
+	return '<img src="'.G5_URL.'/img/grade_icon/'.$ml.'.gif">';
+}
 // Alert
 function apms_alert($msg) {
     global $g5;
@@ -871,6 +874,16 @@ function apms_sideview($mb_id, $name='', $email='', $homepage='', $level='no', $
 		//$title_mb_id = '[비회원]';
     }
 
+	$icdata = sql_fetch(" select mb_level from {$g5['member_table']} where mb_id = '$mb_id' ");
+	$extra_val2 = sql_fetch(" select mb_2 from {$g5['member_table']} where mb_id = '$mb_id' ");
+
+	if($extra_val2['mb_2'] != null){
+		$tmp_name = grade_level_icon($extra_val2['mb_2']).$tmp_name;
+	}
+	else if($icdata['mb_level'] != '1'){
+		$tmp_name = grade_level_icon($icdata['mb_level']).$tmp_name;
+	}
+	
     return "<a href=\"javascript:;\" onClick=\"showSideView(this, '$mb_id', '$name', '$email', '$homepage');\">$tmp_name</a>";
 }
 

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+#style-switcher { border:0; border-right:1px solid #eee; border-bottom:1px solid #eee; border-radius: 0px 0px 3px; border-image: none; left: -206px; top: 18px; width: 205px; position: fixed; z-index: 3333; box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.08); background-color: rgb(255, 255, 255); }
+#style-switcher h2 { margin: 0px; padding: 0px 0px 0px 20px; line-height: 40px; font-family: "Roboto",Helvetica,Arial,sans-serif; font-size: 16px; font-weight: bold; }
+#style-switcher h2 a { border-radius: 0px 3px 3px 0px; top: 0px; width: 44px; height: 40px; text-align: center; right: -44px; font-size: 26px; text-decoration: none; display: block; position: absolute; }
+#style-switcher h3 { margin: 10px 0px 10px 1px; color: rgb(51, 51, 51); font-family: "Roboto",Helvetica,Arial,sans-serif; font-size: 12px; font-weight: 600; }
+#style-switcher h3 a { float:right; margin-right:8px; }
+#style-switcher div { padding: 3px 18px 10px; }
+#style-switcher .widget-setup { background:#222; border-radius: 0px 3px 3px 0px; top: 45px; width: 43px; height: 40px; color:#fff !important; text-align: center; line-height:40px; right: -44px; font-size: 26px; text-decoration: none; display: block; position: absolute; }
+
+.switcher-style { padding:0 0 6px !important; background: rgb(248, 248, 248); font-size:12px; }
+.switcher-style label { display:block; padding:0; margin:0; cursor: pointer; }
+.layout-style, .color-style { padding:0 !important; }
+.layout-style select { margin: 2px 0px 2px 2px; padding: 2px 5px; border-radius: 2px; width: 164px; color: rgb(51, 51, 51); font-size: 12px; cursor: pointer; border:1px solid #ddd; }
+.layout-style input { margin: 0px 0px 2px 2px; padding: 0px 5px; height:28px; line-height:28px; border-radius: 2px; width: 164px; color: rgb(51, 51, 51); font-size: 12px; border:1px solid #ddd; }
+.color-style select { margin: 2px 0px 2px 2px; padding: 2px 5px; border-radius: 2px; width: 164px; color: rgb(51, 51, 51); font-size: 12px; cursor: pointer; }
+.color-style input { margin: 2px 0px 2px 2px; padding: 2px 5px; border-radius: 2px; width: 164px; color: rgb(51, 51, 51); font-size: 12px; cursor: pointer; }
+.color-style .sp-replacer {	padding: 4px 6px !important; width:164px; }
+.color-style .sp-replacer .sp-dd { padding: 0px 1px !important; }
+.color-style .sp-replacer .sp-preview {	padding: 0px 1px !important; width:132px;}
+.save-style { padding: 10px 0px 0px !important; }
+.sp-input { width:80px !important; float:right; }
+.sp-initial { margin-top:-32px; }
+.switcher-btn { color : #999; margin-right:2px; }
+.switcher-btn:hover { color : #000; }
+
+@media only screen and (max-width:767px) {
+	#style-switcher {
+		display: none;
+	}
+}

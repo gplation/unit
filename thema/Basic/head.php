@@ -142,18 +142,19 @@ include_once(THEMA_PATH.'/assets/thema.php');
 				<div class="header-logo en">
 					<!-- Mobile Logo -->
 					<a href="<?php echo $at_href['home'];?>">
-						<b>유니트</b>
+						<b>UNIT</b>
 					</a>
 				</div>
 				<div class="header-icon">
-<!-- 
+
 					<a href="javascript:;" onclick="sidebar_open('sidebar-search');">
 						<i class="fa fa-search"></i>
 					</a>
- -->
+<!-- 
 					<a href="javascript:;" onclick="sidebar_open('sidebar-user');">
 						<i class="fa fa-user"></i>
 					</a>
+ -->
 				</div>
 			</div>
 			<div class="clearfix"></div>

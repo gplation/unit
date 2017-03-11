@@ -35,10 +35,10 @@ $side = ($at_set['side']) ? 'left' : 'right';
 			<div class="row">
 				<div class="col-sm-6">
 					<div class="div-title-underbar">
-						<a href="<?php echo G5_BBS_URL;?>/bbs/register.php">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=join">
 							<span class="pull-right <?php echo $font;?>">Write</span>
 						</a>
-						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=join">
+						<a href="<?php echo G5_BBS_URL;?>/register.php">
 							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
 								<b>Join</b>
 							</span>

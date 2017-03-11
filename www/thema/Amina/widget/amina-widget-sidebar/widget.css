@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* sidebar */
+.sidebar { background: rgb(34, 34, 34); border-left-color: rgb(51, 51, 51); border-left-width: 1px; border-left-style: solid; color: rgb(136, 136, 136); margin-left:40px; }
+.sidebar label { line-height:12px; font-size: 12px; font-weight: normal; cursor: pointer; }
+.sidebar .close-box { position:fixed; top:0; right:280; margin-left:-35px; margin-top:200px; background:rgb(34, 34, 34); color:#fff; width:36px; height:36px; z-index:99999; line-height:32px; border:1px solid rgb(51, 51, 51); border-right:0px; }
+.sidebar .btn-close { background: none; color: rgb(255, 255, 255); }
+.sidebar .btn-close i { font-size: 16px; font-weight: 300 !important; }
+.sidebar .sidebar-title { margin: 0px; padding: 8px 20px; color: rgb(97, 97, 97); text-transform: uppercase; overflow: hidden; font-size: 11px; position: relative;  }
+.sidebar .sidebar-title::after { background: rgb(51, 51, 51); left: 15px; top: 26px; width: 80px; height: 1px; position: absolute; content: "";  }
+.sidebar .sidebar-box { padding: 20px; }
+.sidebar .sidebar-box h5 { font-size: 12px; }
+.sidebar .sidebar-nav { margin-bottom:20px; }
+.sidebar .sidebar-nav > ul { list-style: none; margin: 0px; padding: 0px; }
+.sidebar .sidebar-nav > ul > li { border-bottom-color: rgb(51, 51, 51); border-bottom-width: 1px; border-bottom-style: solid; }
+.sidebar .sidebar-nav > ul > li > a { padding: 6px 20px; color: rgb(176, 176, 176); font-size: 12px; display: block; }
+.sidebar .sidebar-nav > ul > li > a:hover { background: rgb(41, 41, 41); color: rgb(255, 255, 255); text-decoration: none; }
+.sidebar .sidebar-nav > ul > li > a > i { margin-right: 5px; }
+.sidebar .profile-box { padding: 20px 20px 0px; }
+.sidebar .profile { height:95px; }
+.sidebar .profile h3 { color: rgb(255, 255, 255); font-size:20px; line-height:30px; padding:8px 0px; margin:0px; letter-spacing:-1px; display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; }
+.sidebar .profile p { color: rgb(138, 138, 138); padding:0px; margin:0px; }
+.sidebar .badge { font-weight:normal; }
+.sidebar .profile-photo { width:80px; height:80px; margin:0px; margin-right:15px; border-radius: 50%; border:4px solid #000; -webkit-box-shadow: 0 0 0 5px rgb(34,34,34), 0 0 10px 0 rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 0 0 5px rgb(34,34,34), 0 0 10px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 0 0 5px rgb(34,34,34), 0 0 10px 0 rgba(0, 0, 0, 0.2); }
+.sidebar .profile-photo img { width:80px; height:80px; border-radius: 50%; }
+.sidebar .profile-photo i { width:80px; height:80px; font-size:40px; padding:15px 6px 0px 0px; text-align:center; }
+.sidebar .btn-admin { border: 1px solid rgb(223, 17, 25); border-image: none; color: rgb(255, 255, 255) !important; background-color: rgb(223, 27, 35); background-image: none; }
+.sidebar .btn-admin:hover, .sidebar .btn-admin:focus, .sidebar .btn-admin:active { border-color: rgb(213, 7, 15); color: rgb(255, 255, 255) !important; background-color: rgb(213, 7, 15); background-image: none; }
+.sidebar .btn-upload { border: 1px solid rgb(223, 17, 25); border-image: none; color: rgb(255, 255, 255) !important; background-color: rgb(233, 27, 35); background-image: none; }
+.sidebar .btn-upload:hover, .sidebar .btn-upload:focus, .sidebar .btn-upload:active { border-color: rgb(213, 7, 15); color: rgb(255, 255, 255) !important; background-color: rgb(213, 7, 15); background-image: none; }
+.sidebar .btn-logout { border: 1px solid rgb(223, 17, 25); border-image: none; color: rgb(255, 255, 255) !important; background-color: rgb(223, 27, 35); background-image: none; }
+.sidebar .btn-logout:hover, .sidebar .btn-logout:focus, .sidebar .btn-logout:active { border-color: rgb(213, 7, 15); color: rgb(255, 255, 255) !important; background-color: rgb(213, 7, 15); background-image: none; }

@@ -351,7 +351,16 @@ this.form.mb_intercept_date.value=this.form.mb_intercept_date.defaultValue; }">
         </td>
     </tr>
 
-    <?php for ($i=1; $i<=10; $i++) { ?>
+
+    <tr>
+        <th scope="row"><label for="mb_<?php echo 1 ?>">지구대<br>(그린,동아,시티,유니온,잠실,정산)</label></th>
+        <td colspan="3"><input type="text" name="mb_<?php echo 1 ?>" value="<?php echo $mb['mb_'.'1'] ?>" id="mb_<?php echo 1 ?>" class="frm_input" size="30" maxlength="255"></td>
+    </tr>
+    <tr>
+        <th scope="row"><label for="mb_<?php echo 2 ?>">추가 뱃지<br>(ob_leader,team_leader,bowling_queen)</label></th>
+        <td colspan="3"><input type="text" name="mb_<?php echo 2 ?>" value="<?php echo $mb['mb_'.'2'] ?>" id="mb_<?php echo 2 ?>" class="frm_input" size="30" maxlength="255"></td>
+    </tr>
+	<?php for ($i=3; $i<=10; $i++) { ?>
     <tr>
         <th scope="row"><label for="mb_<?php echo $i ?>">여분 필드 <?php echo $i ?></label></th>
         <td colspan="3"><input type="text" name="mb_<?php echo $i ?>" value="<?php echo $mb['mb_'.$i] ?>" id="mb_<?php echo $i ?>" class="frm_input" size="30" maxlength="255"></td>
