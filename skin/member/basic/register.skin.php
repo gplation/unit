@@ -72,10 +72,16 @@ if($header_skin)
             <label><input type="checkbox" name="agree2" value="1" id="agree21"> 개인정보처리방침안내의 내용에 동의합니다.</label>
 		</div>
 	</div>
+	<!-- 회원가입 차단 문구 -->
+	<div class="alert alert-info" role="alert">
+		<strong><i class="fa fa-exclamation-circle"></i> 유니트는 매년 학기초(2월말~3월초 / 8월말~9월초)에만 신입모집을 진행중 입니다.<p> ( 문의 : facebook에서 'clubunit' 검색 혹은 hetosi06@naver.com ) </strong>
+	</div>
 
-    <div class="text-center">
+<!--
+	<div class="text-center">
         <button type="submit" class="btn btn-color">회원가입</button>
     </div>
+-->
 </form>
 
 <script>

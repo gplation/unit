@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+i.poll-icon { background: rgb(52, 152, 219); color:#fff; }
+.poll-head { margin:0px; padding: 10px 20px; line-height:22px; background:#333; color:#fff; font-size:16px; text-align:center; }
+.poll-form { padding: 10px 20px 20px; }
+
+/* Comment Media */
+.comment-media { margin-top:-10px; padding-bottom:10px; }
+.comment-media .photo i { background: rgb(245, 245, 245); padding: 15px; border-radius: 50%; width: 64px; height: 64px; text-align: center; color: rgb(143, 143, 143); font-size: 30px; display: inline-block; }
+.comment-media .photo img { border-radius: 50%; width: 64px !important; height: 64px !important; display:inline-block; }
+.comment-media .media { border-top:1px solid #eee; margin:7px 0px; padding:7px 0px 0px; }
+.comment-media :first-child.media { border-top:0px; margin-top:0px; padding-top:0px; }
+.comment-media h5 { margin:2px 0px; line-height: 22px; font-size:13px; }
+.comment-media .media.media-reply { border:0px; border-top:1px solid #eee; margin:7px 0px 0px; padding:7px 0px 0px; }
+.comment-media .media .media-body { padding-left:0px; }
+.comment-media .media .media-info {	margin-left:10px; font-weight:normal; }
+.comment-media .media .media-content { margin-top:8px; }
+.comment-media .media .media-content img { max-width:100%; }

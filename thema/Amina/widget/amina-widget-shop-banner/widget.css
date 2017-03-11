@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/* amina-widget-shop-banner */
+.amina-widget-shop-banner .widget-head { padding:12px 14px 6px !important; margin:0px; font-weight:bold; border-bottom:1px dotted #aaa; background: #fff; }
+.amina-widget-shop-banner .widget-body { padding:12px 14px 0px; margin:0px; background: #fff; }
+.amina-widget-shop-banner .carousel-nav { float:right; margin-top:-41px; }
+.amina-widget-shop-banner .carousel-nav i { color:#888; margin-left:5px; font-size:18px; }
+.amina-widget-shop-banner .row { margin-left:-7px; margin-right:-7px; }
+.amina-widget-shop-banner .col { padding-left:7px; padding-right:7px; }
+.amina-widget-shop-banner .img { display:block; position:relative; height:0; overflow:hidden; margin-bottom:14px;}
+.amina-widget-shop-banner .img img { display:block; position:absolute; top:0; left:0; width:100%; height:auto; border:0px; }
+.amina-widget-shop-banner .btn-wset { padding-bottom:10px; }

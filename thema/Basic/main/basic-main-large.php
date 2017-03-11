@@ -24,18 +24,136 @@ $side = ($at_set['side']) ? 'left' : 'right';
 	.widget-box { margin-bottom:25px; }
 </style>
 
-<?php echo apms_widget('basic-title', $wid.'-wt1', 'height=400px shadow=4', 'auto=0'); //타이틀 ?>
+
 
 <div class="at-container widget-index">
-
 	<div class="row at-row">
 		<!-- 메인 영역 -->
 		<div class="col-md-9<?php echo ($side == "left") ? ' pull-right' : '';?> at-col at-main">
-
+			
+			<!-- 신입모집 시작 -->
 			<div class="row">
 				<div class="col-sm-6">
+					<div class="div-title-underbar">
+						<a href="<?php echo G5_BBS_URL;?>/bbs/register.php">
+							<span class="pull-right <?php echo $font;?>">Write</span>
+						</a>
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=join">
+							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+								<b>Join</b>
+							</span>
+						</a>
+					</div>
+					<div class="widget-box">
+						<?php echo apms_widget('basic-post-list', $wid.'-join', ''); ?>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="div-title-underbar">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=Question">
+							<span class="pull-right lightgray <?php echo $font;?>">+</span>
+							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+								<b>Question</b>
+							</span>
+						</a>
+					</div>
+					<div class="widget-box">
+						<?php echo apms_widget('basic-post-list', $wid.'-Question', ''); ?>
+					</div>
+				</div>
+			</div>
+			<!-- 신입모집 끝 -->
 
-					<!-- 이슈 시작-->
+
+			<!-- 지구대 시작 -->
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="div-title-underbar">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=green">
+							<span class="pull-right lightgray <?php echo $font;?>">+</span>
+							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+								<b>GREEN</b>
+							</span>
+						</a>
+					</div>
+					<div class="widget-box">
+						<?php echo apms_widget('basic-post-webzine', $wid.'green', ''); ?>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="div-title-underbar">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=donga">
+							<span class="pull-right lightgray <?php echo $font;?>">+</span>
+							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+								<b>DONG-A</b>
+							</span>
+						</a>
+					</div>
+					<div class="widget-box">
+						<?php echo apms_widget('basic-post-webzine', $wid.'donga', ''); ?>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="div-title-underbar">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=city">
+							<span class="pull-right lightgray <?php echo $font;?>">+</span>
+							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+								<b>CITY</b>
+							</span>
+						</a>
+					</div>
+					<div class="widget-box">
+						<?php echo apms_widget('basic-post-webzine', $wid.'city', ''); ?>
+					</div>
+				</div>				
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="div-title-underbar">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=u_nion">
+							<span class="pull-right lightgray <?php echo $font;?>">+</span>
+							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+								<b>UNION</b>
+							</span>
+						</a>
+					</div>
+					<div class="widget-box">
+						<?php echo apms_widget('basic-post-webzine', $wid.'union', ''); ?>
+					</div>
+
+				</div>
+				<div class="col-sm-4">
+					<div class="div-title-underbar">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=jamsil">
+							<span class="pull-right lightgray <?php echo $font;?>">+</span>
+							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+								<b>JAMSIL</b>
+							</span>
+						</a>
+					</div>
+					<div class="widget-box">
+						<?php echo apms_widget('basic-post-webzine', $wid.'jamsil', ''); ?>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="div-title-underbar">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=jungsan">
+							<span class="pull-right lightgray <?php echo $font;?>">+</span>
+							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+								<b>JUNGSAN</b>
+							</span>
+						</a>
+					</div>
+					<div class="widget-box">
+						<?php echo apms_widget('basic-post-webzine', $wid.'jungsan', ''); ?>
+					</div>
+				</div>
+			</div>
+			<!-- 지구대 끝 -->
+
+<!-- 
+					이슈 시작
 					<div class="div-title-underbar">
 						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=basic">
 							<span class="pull-right lightgray <?php echo $font;?>">+</span>
@@ -47,12 +165,13 @@ $side = ($at_set['side']) ? 'left' : 'right';
 					<div class="widget-box">
 						<?php echo apms_widget('basic-post-garo', $wid.'-wm1', 'icon={아이콘:caret-right} date=1 center=1 strong=1,2'); ?>
 					</div>
-					<!-- 이슈 끝-->
+					이슈 끝
+-->
 
-				</div>
+<!-- 
 				<div class="col-sm-6">
 
-					<!-- 뉴스 시작 -->
+					뉴스 시작
 					<div class="div-title-underbar">
 						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=basic">
 							<span class="pull-right lightgray <?php echo $font;?>">+</span>
@@ -64,14 +183,28 @@ $side = ($at_set['side']) ? 'left' : 'right';
 					<div class="widget-box">
 						<?php echo apms_widget('basic-post-sero', $wid.'-wm2', 'icon={아이콘:caret-right} date=1 center=1 strong=1,2'); ?>
 					</div>
-					<!-- 뉴스 끝 -->
-
+					뉴스 끝
 				</div>
-			</div>
+
+ -->
 
 			<!-- 갤러리 시작 -->
+			<!-- 배너를 갤러리로 사용 시작 -->
 			<div class="div-title-underbar">
-				<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=basic">
+				<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=gallary">
+					<span class="pull-right lightgray <?php echo $font;?>"></span>
+					<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+						<b>유니트 행사 갤러리</b>
+					</span>
+				</a>
+			</div>
+			<div class="widget-box">
+				<?php echo apms_widget('basic-post-slider', $wid.'-wm9', 'center=1 nav=1', 'auto=0'); ?>
+			</div>
+			<!-- 배너를 갤러리로 사용 끝 -->	
+
+			<!-- <div class="div-title-underbar">
+				<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=gallary">
 					<span class="pull-right lightgray <?php echo $font;?>">+</span>
 					<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
 						<b>Gallery</b>
@@ -79,11 +212,13 @@ $side = ($at_set['side']) ? 'left' : 'right';
 				</a>
 			</div>
 			<div class="widget-box">
-				<?php echo apms_widget('basic-post-gallery', $wid.'-wm3', 'center=1'); ?>
-			</div>
-			<!-- 갤러리 끝 -->	
+				<?php echo apms_widget('basic-post-gallery', $wid.'-gallary', 'center=1'); ?>
+			</div> -->
 
-			<!-- 웹진 시작 -->
+			<!-- 갤러리 끝 -->	
+			
+			<!-- 
+			웹진 시작
 			<div class="div-title-underbar">
 				<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=basic">
 					<span class="pull-right lightgray <?php echo $font;?>">+</span>
@@ -95,20 +230,21 @@ $side = ($at_set['side']) ? 'left' : 'right';
 			<div class="widget-box">
 				<?php echo apms_widget('basic-post-webzine', $wid.'-wm4', 'bold=1 date=1'); ?>
 			</div>
-			<!-- 웹진 끝 -->	
+			웹진 끝	
 
-			<!-- 이미지 배너 시작 -->	
+			이미지 배너 시작	
 			<div class="widget-box widget-img">
 				<a href="#배너이동주소">
 					<img src="<?php echo THEMA_URL;?>/assets/img/banner.jpg">
 				</a>
 			</div>
-			<!-- 이미지 배너 끝 -->	
-
+			이미지 배너 끝	
+			-->
+<!-- 
 			<div class="row">
 				<div class="col-sm-6">
 
-					<!-- 가이드 시작 -->
+					가이드 시작
 					<div class="div-title-underbar">
 						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=basic">
 							<span class="pull-right lightgray <?php echo $font;?>">+</span>
@@ -120,12 +256,12 @@ $side = ($at_set['side']) ? 'left' : 'right';
 					<div class="widget-box">
 						<?php echo apms_widget('basic-post-mix', $wid.'-wm5', 'icon={아이콘:caret-right} bold=1 idate=1 date=1 strong=1'); ?>
 					</div>
-					<!-- 가이드 끝 -->
+					가이드 끝
 
 				</div>
 				<div class="col-sm-6">
 
-					<!-- 팁 시작 -->
+					팁 시작
 					<div class="div-title-underbar">
 						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=basic">
 							<span class="pull-right lightgray <?php echo $font;?>">+</span>
@@ -137,7 +273,7 @@ $side = ($at_set['side']) ? 'left' : 'right';
 					<div class="widget-box">
 						<?php echo apms_widget('basic-post-mix', $wid.'-wm6', 'icon={아이콘:caret-right} bold=1 idate=1 date=1 strong=1'); ?>
 					</div>
-					<!-- 팁 끝 -->
+					팁 끝
 
 				</div>
 
@@ -146,7 +282,7 @@ $side = ($at_set['side']) ? 'left' : 'right';
 			<div class="row">
 				<div class="col-sm-6">
 
-					<!-- Q & A 시작 -->
+					Q & A 시작
 					<div class="div-title-underbar">
 						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=basic">
 							<span class="pull-right lightgray <?php echo $font;?>">+</span>
@@ -158,12 +294,12 @@ $side = ($at_set['side']) ? 'left' : 'right';
 					<div class="widget-box">
 						<?php echo apms_widget('basic-post-list', $wid.'-wm7', 'icon={아이콘:caret-right} date=1 strong=1'); ?>
 					</div>
-					<!-- Q & A 끝 -->
+					Q & A 끝
 
 				</div>
 				<div class="col-sm-6">
 
-					<!-- 토크 시작 -->
+					토크 시작
 					<div class="div-title-underbar">
 						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=basic">
 							<span class="pull-right lightgray <?php echo $font;?>">+</span>
@@ -175,27 +311,73 @@ $side = ($at_set['side']) ? 'left' : 'right';
 					<div class="widget-box">
 						<?php echo apms_widget('basic-post-list', $wid.'-wm8', 'icon={아이콘:caret-right} date=1 strong=1,2'); ?>
 					</div>
-					<!-- 토크 끝 -->
+					토크 끝
 
 				</div>
 
 			</div>
-
-			<!-- 배너 시작 -->
-			<div class="div-title-underbar">
-				<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=basic">
-					<span class="pull-right lightgray <?php echo $font;?>">+</span>
-					<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
-						<b>Banner</b>
-					</span>
-				</a>
-			</div>
-			<div class="widget-box">
-				<?php echo apms_widget('basic-post-slider', $wid.'-wm9', 'center=1 nav=1', 'auto=0'); ?>
-			</div>
-			<!-- 배너 끝 -->	
 			
-		</div>
+		
+ -->
+			<!-- 소모임 시작 -->
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="div-title-underbar">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=bowl">
+							<span class="pull-right lightgray <?php echo $font;?>">+</span>
+							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+								<b>볼링소모임</b>
+							</span>
+						</a>
+					</div>
+					<div class="widget-box">
+						<?php echo apms_widget('basic-post-webzine', $wid.'bowl', ''); ?>
+					</div>
+
+				</div>
+				<div class="col-sm-4">
+					<div class="div-title-underbar">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=board">
+							<span class="pull-right lightgray <?php echo $font;?>">+</span>
+							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+								<b>보드소모임</b>
+							</span>
+						</a>
+					</div>
+					<div class="widget-box">
+						<?php echo apms_widget('basic-post-webzine', $wid.'board', ''); ?>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="div-title-underbar">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=baseball">
+							<span class="pull-right lightgray <?php echo $font;?>">+</span>
+							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+								<b>적시타</b>
+							</span>
+						</a>
+					</div>
+					<div class="widget-box">
+						<?php echo apms_widget('basic-post-webzine', $wid.'baseball', ''); ?>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="div-title-underbar">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=total">
+							<span class="pull-right lightgray <?php echo $font;?>">+</span>
+							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+								<b>회의록&회계록</b>
+							</span>
+						</a>
+					</div>
+					<div class="widget-box">
+						<?php echo apms_widget('basic-post-webzine', $wid.'total', ''); ?>
+					</div>
+				</div>
+			</div>
+			<!-- 소모임 끝 -->
+
+		</div>			
 		<!-- 사이드 영역 -->
 		<div class="col-md-3<?php echo ($side == "left") ? ' pull-left' : '';?> at-col at-side">
 
@@ -220,7 +402,7 @@ $side = ($at_set['side']) ? 'left' : 'right';
 
 					<!-- 알림 시작 -->
 					<div class="div-title-underbar">
-						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=basic">
+						<a href="<?php echo G5_BBS_URL;?>/board.php?bo_table=unit_notice">
 							<span class="pull-right lightgray <?php echo $font;?>">+</span>
 							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
 								<b>Notice</b>
@@ -228,7 +410,7 @@ $side = ($at_set['side']) ? 'left' : 'right';
 						</a>
 					</div>
 					<div class="widget-box">
-						<?php echo apms_widget('basic-post-list', $wid.'-ws1', 'icon={아이콘:bell} date=1 strong=1,3'); ?>
+						<?php echo apms_widget('basic-post-list', $wid.'-ws1', ''); ?>
 					</div>
 					<!-- 알림 끝 -->
 			
@@ -237,12 +419,12 @@ $side = ($at_set['side']) ? 'left' : 'right';
 
 					<!-- 댓글 시작 -->
 					<div class="div-title-underbar">
-						<a href="<?php echo $at_href['new'];?>?view=c">
-							<span class="pull-right lightgray <?php echo $font;?>">+</span>
+						<!-- <a href="<?php echo $at_href['new'];?>?view=c"> -->
+							<!-- <span class="pull-right lightgray <?php echo $font;?>">+</span> -->
 							<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
 								<b>Comments</b>
 							</span>
-						</a>
+						<!-- </a> -->
 					</div>
 					<div class="widget-box">
 						<?php echo apms_widget('basic-post-list', $wid.'-ws2', 'icon={아이콘:comment} comment=1 date=1 strong=1,2'); ?>
@@ -252,13 +434,58 @@ $side = ($at_set['side']) ? 'left' : 'right';
 				</div>
 			</div>
 
+			<!-- 설문 시작 -->
+			<?php // 설문조사
+				$is_poll_list = apms_widget('basic-poll', $wid.'-ws3', 'icon={아이콘:commenting}');
+				if($is_poll_list) {
+			?>
+				<div class="div-title-underbar">
+					<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
+						<b>Unit Poll</b>
+					</span>
+				</div>
+				<div class="widget-box">
+					<?php echo $is_poll_list; ?>
+				</div>					
+			<?php } ?>
+			<!-- 설문 끝 -->
+
 			<!-- 광고 시작 -->
 			<div class="widget-box">
-				<div style="width:100%; min-height:280px; line-height:280px; text-align:center; background:#f5f5f5;">
-					반응형 구글광고 등
+				<div style="width:100%; height:100%; text-align:center; background:#f5f5f5;">
+					<!-- 구글광고 추가 용준 -->
+					<?php if(!G5_IS_MOBILE) { ?>
+						<center>
+							<script type="text/javascript">
+								google_ad_client = "ca-pub-2562502091444002";
+								google_ad_slot = "5858376405";
+								google_ad_width = 250;
+								google_ad_height = 250;
+							</script>
+							<!-- unit.kr 250x250 -->
+
+							<script type="text/javascript"
+								src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+							</script>
+						</center>
+					<?php } else if(G5_IS_MOBILE){ ?>
+						<center>
+							<script type="text/javascript">
+								google_ad_client = "ca-pub-2562502091444002";
+								google_ad_slot = "8451916004";
+								google_ad_width = 320;
+								google_ad_height = 50;
+							</script>
+							<!-- unit.kr 모바일 320x50 -->
+							<script type="text/javascript"
+							src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+							</script>
+						</center>
+					<?php } ?>
 				</div>
 			</div>
 			<!-- 광고 끝 -->
+
 
 			<!-- 랭킹 시작 -->
 			<div class="div-title-underbar">
@@ -270,22 +497,6 @@ $side = ($at_set['side']) ? 'left' : 'right';
 				<?php echo apms_widget('basic-member', $wid.'-wr1', 'cnt=1 rank=navy ex_grade=10'); ?>
 			</div>
 			<!-- 랭킹 끝 -->
-
-			<!-- 설문 시작 -->
-			<?php // 설문조사
-				$is_poll_list = apms_widget('basic-poll', $wid.'-ws3', 'icon={아이콘:commenting}');
-				if($is_poll_list) {
-			?>
-				<div class="div-title-underbar">
-					<span class="div-title-underbar-bold border-<?php echo $line;?> <?php echo $font;?>">
-						<b>Poll</b>
-					</span>
-				</div>
-				<div class="widget-box">
-					<?php echo $is_poll_list; ?>
-				</div>					
-			<?php } ?>
-			<!-- 설문 끝 -->
 
 			<!-- 통계 시작 -->
 			<div class="div-title-underbar">
@@ -309,13 +520,13 @@ $side = ($at_set['side']) ? 'left' : 'right';
 				</ul>
 			</div>
 			<!-- 통계 끝 -->
-
-			<!-- SNS아이콘 시작 -->
+<!-- 
+			SNS아이콘 시작
 			<div class="widget-box text-center">
 				<?php echo $sns_share_icon; // SNS 공유아이콘 ?>
 			</div>
-			<!-- SNS아이콘 끝 -->
-
+			SNS아이콘 끝
+ -->
 		</div>
 	</div>
 </div>

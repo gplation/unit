@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+body { padding:0; margin:0; }
+
+i.img-fa { width:40px; height:40px; padding:10px 0px 0px; font-size:20px; text-align:center; color:#aaa; }
+.cmt { color: orangered; font-size: 10px; font-weight:bold; font-family:verdana; letter-spacing:-1px; }
+.list-none { padding:50px 0px; }
+
+/* Comment Media */
+.comment-media { padding-bottom:10px; }
+.comment-media .photo i { background: rgb(245, 245, 245); padding: 15px; width: 64px; height: 64px; text-align: center; color: rgb(143, 143, 143); font-size: 30px; display: inline-block; }
+.comment-media .photo img { width: 64px !important; height: 64px !important; display:inline-block; }
+.comment-media .media { border-bottom:1px solid #eee; margin:7px 0px; padding:0px 12px 7px; }
+.comment-media :first-child.media { border-top:0px; margin-top:0px; padding-top:0px; }
+.comment-media h5 { margin:2px 0px 0px; line-height: 22px; font-size:13px; }
+.comment-media .media .media-body { padding-left:0px; }
+.comment-media .media .media-info {	margin-left:10px; }
+.comment-media .media .media-content { margin-top:4px; }
+.comment-media .media .media-it { margin-top:10px; }
+
+.at-media .media { padding-left: 12px; padding-right:12px; }

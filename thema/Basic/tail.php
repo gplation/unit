@@ -22,14 +22,14 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 				<div class="at-container">
 					<ul class="pull-left">
 						<li><a href="<?php echo G5_BBS_URL;?>/page.php?hid=intro">사이트 소개</a></li> 
-						<li><a href="<?php echo G5_BBS_URL;?>/page.php?hid=provision">이용약관</a></li> 
+						<li><a href="<?php echo G5_BBS_URL;?>/page.php?hid=provision"><strong>회칙안내</strong></a></li> 
 						<li><a href="<?php echo G5_BBS_URL;?>/page.php?hid=privacy">개인정보처리방침</a></li>
 						<li><a href="<?php echo G5_BBS_URL;?>/page.php?hid=noemail">이메일 무단수집거부</a></li>
 						<li><a href="<?php echo G5_BBS_URL;?>/page.php?hid=disclaimer">책임의 한계와 법적고지</a></li>
 					</ul>
 					<ul class="pull-right">
 						<li><a href="<?php echo G5_BBS_URL;?>/page.php?hid=guide">이용안내</a></li>
-						<li><a href="<?php echo $at_href['secret'];?>">문의하기</a></li>
+						<!-- <li><a href="<?php echo $at_href['secret'];?>">문의하기</a></li> -->
 						<li><a href="<?php echo $as_href['pc_mobile'];?>"><?php echo (G5_IS_MOBILE) ? 'PC' : '모바일';?>버전</a></li>
 					</ul>
 					<div class="clearfix"></div>
@@ -44,11 +44,12 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 							</div>
 							<div class="pull-left hidden-xs">
 								<!-- 하단 좌측 로고 -->
-								<i class="fa fa-leaf"></i>
+								<img src="http://unit1987.cafe24.com/img/bottom.png" width="50" border=0>
 							</div>
 							<div class="media-body">
 						
 								<ul class="at-about hidden-xs">
+<!-- 
 									<li><b><?php echo $default['de_admin_company_name']; ?></b></li>
 									<li>대표 : <?php echo $default['de_admin_company_owner']; ?></li>
 									<li><?php echo $default['de_admin_company_addr']; ?></li>
@@ -58,6 +59,11 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 									<li>통신판매업신고 : <span><?php echo $default['de_admin_tongsin_no']; ?></span></li>
 									<li>개인정보관리책임자 : <?php echo $default['de_admin_info_name']; ?></li>
 									<li>이메일 : <span><?php echo $default['de_admin_info_email']; ?></span></li>
+ -->
+									<li><b>대학연합레져스포츠동아리 </b></li>
+									<li>회장 : 정원주</li>
+									<li><strong>협찬문의 : <span>admin@unit.kr / hetosi06@naver.com </strong></span></li>
+									<li><span class="copyright">unit.kr & clubunit.com &copy; All Rights Reserved.</span></li>
 								</ul>
 								
 								<div class="clearfix"></div>

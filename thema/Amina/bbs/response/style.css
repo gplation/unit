@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+body { margin:0; padding:0; }
+
+h5.media-heading { margin-top:2px; }
+.img-thumbnail.photo i { background: rgb(238, 238, 238); padding: 8px; width: 40px; height: 40px; text-align: center; color: rgb(255, 255, 255); font-size: 25px; display: inline-block; }
+.img-thumbnail.photo img { width: 40px !important; height: 40px !important; display:inline-block; }
+
+.res-info { margin:0; padding:7px 12px; }

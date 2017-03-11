@@ -1,10 +1,10 @@
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가 
 ?>
-<div class="m-wrap">
+<!-- <div class="m-wrap">
 	<div class="at-container">
 		<div class="m-table en">
-			<div class="m-icon">
+<div class="m-icon">
 				<a href="javascript:;" onclick="sidebar_open('sidebar-menu');"><i class="fa fa-bars"></i></a>
 			</div>
 			<?php if(IS_YC) { // 영카트 이용시 ?>
@@ -53,6 +53,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 					</ul>
 				</div>
 			</div>
+			영카드 아이콘 삭제
 			<?php if(IS_YC) { // 영카트 이용시 ?>
 				<div class="m-icon">
 					<a href="<?php echo $at_href['cart'];?>" onclick="sidebar_open('sidebar-cart'); return false;"> 
@@ -65,6 +66,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 					</a>
 				</div>
 			<?php } ?>
+
 			<div class="m-icon">
 				<a href="javascript:;" onclick="sidebar_open('sidebar-response');">
 					<i class="fa fa-bell"></i>
@@ -75,7 +77,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <div class="clearfix"></div>
 

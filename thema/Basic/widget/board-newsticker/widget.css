@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+/* widget-board-newsticker */
+.widget-board-newsticker { }
+.widget-board-newsticker a { color:rgb(255, 255, 255); height:32px; line-height: 32px; font-family: "Roboto", sans-serif; font-size: 18px; font-weight:400; display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; }
+.widget-board-newsticker a:hover { color:rgb(255, 255, 255); }
+.widget-board-newsticker .rank-icon { display:inline-block; padding:0px 6px; font-size:14px; letter-spacing:-1px; line-height:20px; margin-right:2px; }
+.widget-board-newsticker .info { font-size:13px; }
+.widget-board-newsticker .info i { margin-left:10px; }

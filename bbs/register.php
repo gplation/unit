@@ -78,7 +78,7 @@ if(is_file($skin_path.'/setup.skin.php') && ($is_demo || $is_designer)) {
 
 $action_url = G5_BBS_URL.'/register_form.php';
 include_once($skin_path.'/register.skin.php');
-
+ 
 if($is_reg_sub) {
 	if(!USE_G5_THEME) @include_once(THEMA_PATH.'/tail.sub.php');
 	include_once(G5_PATH.'/tail.sub.php');

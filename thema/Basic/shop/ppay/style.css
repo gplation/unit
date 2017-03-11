@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.ppay-box { text-align:center; margin: 0px 0px 15px; border: 1px solid rgb(231, 231, 231); transition:0.3s linear; border-image: none; overflow: hidden; position: relative; cursor: default; }
+.ppay-box::before { display: table; content: ""; }
+.ppay-box::after { display: table; content: ""; }
+.ppay-box::after { clear: both; }
+.ppay-box h2 { margin: 0px; padding: 12px 15px 0px; color: rgb(51, 51, 51); font-size: 16px; font-weight: 500; text-align:center; }
+.ppay-box p { margin:0px 0px 10px; padding:10px; }
+.ppay-box .ppay-fa { padding: 20px 0px 10px; }
+.ppay-box .ppay-fa i { color: rgb(97, 97, 97); font-size: 80px; }

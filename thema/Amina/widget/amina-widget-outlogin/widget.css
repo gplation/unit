@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/* amina-widget-outlogin */
+.amina-widget-outlogin label { line-height:12px; font-size: 12px; font-weight: normal; cursor: pointer; }
+.amina-widget-outlogin .profile .photo { margin-right:12px; }
+.amina-widget-outlogin .profile .photo img { width:60px; height:60px; border-radius: 50%; border:0; }
+.amina-widget-outlogin .profile .photo i { width:60px; height:60px; font-size:30px; padding:15px 0px 0px; text-align:center; background:#f5f5f5; border-radius: 50%; }
+.amina-widget-outlogin .profile h3 { font-size:18px; line-height:32px; padding:0px; margin:0px; letter-spacing:-1px; display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; }

@@ -12,7 +12,9 @@ include_once(THEMA_PATH.'/assets/thema.php');
 			<div class="pull-left">
 				<ul>
 					<li><a href="javascript:;" id="favorite">즐겨찾기</a></li>
+<!-- RSS 삭제 용준
 					<li><a href="<?php echo $at_href['rss'];?>" target="_blank">RSS 구독</a></li>
+ -->
 					<?php
 					  $tweek = array("일", "월", "화", "수", "목", "금", "토");
 					?>	
@@ -40,6 +42,7 @@ include_once(THEMA_PATH.'/assets/thema.php');
 						<li><a href="<?php echo $at_href['reg'];?>">회원가입</a></li>
 						<li><a href="<?php echo $at_href['lost'];?>" class="win_password_lost">정보찾기	</a></li>
 					<?php } ?>
+<!-- 영카드 페이지 삭제 용준
 					<?php if(IS_YC) { // 영카트 사용하면 ?>
 						<?php if($member['cart'] || $member['today']) { ?>
 							<li>
@@ -50,6 +53,7 @@ include_once(THEMA_PATH.'/assets/thema.php');
 						<?php } ?>
 						<li><a href="<?php echo $at_href['change'];?>"><?php echo (IS_SHOP) ? '커뮤니티' : '쇼핑몰';?></a></li>
 					<?php } ?>
+ -->
 					<li><a href="<?php echo $at_href['connect'];?>">접속 <?php echo number_format($stats['now_total']); ?><?php echo ($stats['now_mb']) ? ' (<b class="orangered">'.number_format($stats['now_mb']).'</b>)' : ''; ?></a></li>
 					<?php if($is_member) { ?>
 						<li><a href="<?php echo $at_href['logout'];?>">로그아웃	</a></li>
@@ -64,15 +68,17 @@ include_once(THEMA_PATH.'/assets/thema.php');
 	<header class="pc-header">
 		<div class="at-container">
 			<!-- PC Logo -->
-			<div class="header-logo">
-				<a href="<?php echo $at_href['home'];?>">
-					AMINA
+			<div class="header-logo text-center pull-left">
+				<a href="http://unit.kr/">
+					<img src="http://unit1987.cafe24.com/img/bottom.png" border=0>
 				</a>
 				<span class="header-desc">
-					세상을 바꾸는 작은힘 - 아미나
+					대학연합레져스포츠동아리 - UNIT
 				</span>
 			</div>
-			<!-- PC Search -->
+
+			<!-- PC Search 삭제 용준-->
+			<!-- 
 			<div class="header-search">
 				<form name="tsearch" method="get" onsubmit="return tsearch_submit(this);" role="form" class="form">
 				<input type="hidden" name="url"	value="<?php echo (IS_YC) ? $at_href['isearch'] : $at_href['search'];?>">
@@ -87,6 +93,41 @@ include_once(THEMA_PATH.'/assets/thema.php');
 					<?php echo apms_widget('basic-keyword', 'basic-keyword', 'q=베이직테마,아미나빌더,그누보드,영카트'); // 키워드 ?>
 				</div>
 			</div>
+			 -->
+
+			<!-- PC 구글배너 추가 용준 -->
+			<div class="pull-right visible-lg">
+				<div style="width:486px; height:60px; line-height:60px; text-align:center; background:#f5f5f5;">
+				<script type="text/javascript">
+					google_ad_client = "ca-pub-2562502091444002";
+					google_ad_slot = "6023234809";
+					google_ad_width = 468;
+					google_ad_height = 60;
+				</script>
+
+				<script type="text/javascript"
+					src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>						
+				</div>
+			</div>
+			<!-- PC 구글배너 종료 용준 -->
+
+
+			<div class="pull-right">
+				<!--명동커피 배너 삭제
+				<a href="http://unit1987.cafe24.com/bbs/board.php?bo_table=sponsor&wr_id=6" target=_blank><img src="http://unit1987.cafe24.com/img/myungdong-cafe.gif" height=60 border=0></a>
+				-->
+				<!--초코블라썸 배너 삭제
+				<a href="http://unit1987.cafe24.com/bbs/board.php?bo_table=sponsor&wr_id=3" target=_blank><img src="http://unit1987.cafe24.com/img/choco_blossom.gif" height=60 border=0></a>
+				-->
+				<!--페이스북 배너-->
+				<a href="http://www.facebook.com/clubunit" target=_blank><img src="http://unit1987.cafe24.com/img/banner1.jpg" height=60 border=0></a>&nbsp
+				<!--싸이월드 배너-->
+				<a href="http://club.cyworld.com/unit1987" target=_blank><img src="http://unit1987.cafe24.com/img/banner2.png" height=60 border=0></a>
+			</div>
+
+<!-- 상단 배너추가 - 신재훈 -->
+
 			<div class="clearfix"></div>
 		</div>
 	</header>
@@ -96,19 +137,22 @@ include_once(THEMA_PATH.'/assets/thema.php');
 		<div class="at-container">
 			<div class="header-wrap">
 				<div class="header-icon">
-					<a href="javascript:;" onclick="sidebar_open('sidebar-user');">
-						<i class="fa fa-user"></i>
-					</a>
+					<a href="javascript:;" onclick="sidebar_open('sidebar-menu');"><i class="fa fa-bars"></i></a>
 				</div>
 				<div class="header-logo en">
 					<!-- Mobile Logo -->
 					<a href="<?php echo $at_href['home'];?>">
-						<b>아미나</b>
+						<b>유니트</b>
 					</a>
 				</div>
 				<div class="header-icon">
+<!-- 
 					<a href="javascript:;" onclick="sidebar_open('sidebar-search');">
 						<i class="fa fa-search"></i>
+					</a>
+ -->
+					<a href="javascript:;" onclick="sidebar_open('sidebar-user');">
+						<i class="fa fa-user"></i>
 					</a>
 				</div>
 			</div>
@@ -124,6 +168,8 @@ include_once(THEMA_PATH.'/assets/thema.php');
 			<div class="at-container">
 				<div class="nav-right nav-rw nav-height">
 					<ul>
+
+						<!-- 쇼핑 아이콘 삭제 용준
 						<?php if(IS_YC) { //영카트 ?>
 							<li class="nav-show">
 								<a href="<?php echo $at_href['cart'];?>" onclick="sidebar_open('sidebar-cart'); return false;"<?php echo tooltip('쇼핑');?>> 
@@ -136,6 +182,8 @@ include_once(THEMA_PATH.'/assets/thema.php');
 								</a>
 							</li>
 						<?php } ?>
+						 -->
+
 						<li>
 							<a href="javascript:;" onclick="sidebar_open('sidebar-response');"<?php echo tooltip('알림');?>>
 								<i class="fa fa-bell"></i>

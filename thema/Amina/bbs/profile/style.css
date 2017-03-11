@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/* Common */
+.img-photo i { 
+	background: rgb(245, 245, 245); padding: 16px; border-radius: 50%; width: 80px; height: 80px; text-align: center; color: rgb(143, 143, 143); font-size: 40px; display: inline-block; 
+}
+.img-photo img { 
+	border-radius: 50%; width: 80px !important; height: 80px !important; display:inline-block; 
+}
+.img-resize img { 
+	max-width:100%; height:auto; 
+}
+

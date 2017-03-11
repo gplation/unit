@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* widget-board-photo */
+.widget-board-photo ul { list-style: none; margin: 0px; padding: 0px; }
+.widget-board-photo li { height:72px; overflow:hidden; line-height:20px; padding: 6px 0px; width: 100%; clear: left; border-bottom-color: rgb(241, 241, 241); border-bottom-width: 1px; border-bottom-style: dotted; display: block; }
+.widget-board-photo li img { width: 60px; height:60px; display:block; }
+.widget-board-photo li p { margin:0px; margin-left: 70px; padding:0px; }
+.widget-board-photo li a { line-height: 18px; font-weight: 400; }
+.widget-board-photo li a:hover { color: rgb(70, 70, 70); text-decoration: none; }
+.widget-board-photo li b { font-weight:normal; color: rgb(228, 228, 228); width:60px; height:60px; text-align:center; line-height:60px; }
+.widget-board-photo li small { color: orangered; font-size: 10px; font-weight:bold; font-family:verdana; letter-spacing:-1px; }
+.widget-board-photo li .icon { color:#ddd; margin-right:1px; }
+.widget-board-photo li .rank-icon { display:inline-block; padding:0px 6px; font-size:11px; letter-spacing:-1px; line-height:16px; margin-right:2px; }
+.widget-board-photo li .info { font-size: 11px; font-style: normal; display:block; color: rgb(161, 161, 161); }

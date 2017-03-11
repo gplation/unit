@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.opt-tbl { width:100%; border-collapse:collapse; padding:0px; margin:0 0 15px; border:0px; border:1px solid #ddd; border-bottom:0px; background:#fff;} 
+.opt-tbl th { width:120px; text-align:center; padding:8px 10px; border-bottom:1px solid #ddd; background:#fafafa; white-space:nowrap;}
+.opt-tbl td { padding:8px 10px; border-bottom:1px solid #ddd;}
+.bsk-tbl th { text-align:center; width:140px; }
+.bsk-tbl .well { margin:6px 0px !important; }
+.bsk-tbl .well ul  { padding:0; padding-left:15px; margin:0; }
+.bsk-tbl .well li  { font-size:12px; }

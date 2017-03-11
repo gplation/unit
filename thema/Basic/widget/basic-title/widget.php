@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 if (!defined('_GNUBOARD_')) exit; //개별 페이지 접근 불가
 
 if(!$wset['slider']) {
@@ -116,7 +116,7 @@ $widget_id = apms_id();
 	</div>
 
 	<?php if($wset['arrow'] != '2') { ?>
-		<!-- Controls -->
+		Controls
 		<a class="left carousel-control" href="#<?php echo $widget_id;?>" role="button" data-slide="prev">
 			<?php if($is_small) { ?>
 				<i class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -135,7 +135,7 @@ $widget_id = apms_id();
 		</a>
 	<?php } ?>
 
-	<!-- Indicators -->
+	Indicators
 	<?php if($wset['nav']) { ?>
 		<ol class="carousel-indicators" style="z-index:2;margin-bottom:0px;bottom:<?php echo ($wset['dot']) ? $wset['dot'] : '10px';?>;">
 			<?php for ($i=0; $i < $list_cnt; $i++) { ?>
@@ -152,3 +152,4 @@ $widget_id = apms_id();
 		</a>
 	</div>
 <?php } ?>
+ -->

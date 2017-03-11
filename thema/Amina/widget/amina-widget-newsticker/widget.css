@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/* amina-widget-newsticker */
+.amina-widget-newsticker { }
+.amina-widget-newsticker a { display:block; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden; }
+.amina-widget-newsticker .rank-icon { display:inline-block; padding:0px 6px; font-size:11px; letter-spacing:-1px; line-height:20px; margin-right:2px; }
+.amina-widget-newsticker .cnt { font-size:10px; font-family:verdana; letter-spacing:-1px; font-weight:bold; color: rgb(233, 27, 35); margin-left:12px; margin-right:4px; }
+

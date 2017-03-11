@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+.bsk-tbl th { text-align:center; width:120px; }
+.bsk-tbl .well { margin:6px 0px !important; }
+.bsk-tbl .well ul  { padding:0; padding-left:15px; margin:0; }
+.bsk-tbl .well li  { font-size:12px; }

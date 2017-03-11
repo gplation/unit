@@ -14,11 +14,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$widget_url.'/widget.css">', 0);
 ?>
 <div class="basic-outlogin">
 	<?php if($is_member) { //Login ?>
+		<!-- 회원탈퇴 삭제 -->
+		<!-- 
 		<div class="pull-right">
 			<a href="<?php echo $at_href['leave'];?>" class="leave-me at-tip" data-original-title="<nobr>회원탈퇴</nobr>" data-toggle="tooltip" data-placement="top" data-html="true">
 				<span class="text-muted"><i class="fa fa-sign-out fa-lg"></i></span>
 			</a>
 		</div>
+		 -->
 		<div class="profile">
 			<a href="<?php echo $at_href['myphoto'];?>" target="_blank" class="win_memo" title="사진등록">
 				<div class="photo pull-left">
